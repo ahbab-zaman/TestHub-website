@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Test Hut</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+          backgroundImage:{
+            bannerImage: "url('./images/banner_1.png')",
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+   <header>
+    <div class="navbar w-11/12 mx-auto py-4">
+        <div class="navbar-start">
+          <a class="text-2xl font-bold"
+            >Testy<span class="text-yellow-400">Hut</span></a
+          >
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-warning text-black font-bold">Sign Up</a>
+        </div>
+      </div>
+      <!-- banner section -->
+      <div
+        class="hero bg-bannerImage bg-center bg-no-repeat bg-cover h-auto lg:h-[400px]">
+        <div class="hero-overlay bg-[#00000085]"></div>
+        <div class="hero-content text-neutral-content text-center">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">Test Our Delicious <br> Best Foods</h1>
+            <p class="mb-5">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
+              a id nisi.
+            </p>
+            <div class="flex">
+              <input type="text" placeholder="Search any food" class="input input-bordered w-full" />
+              <button class="btn btn-warning text-black font-bold">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+   </header>
+
+   <main class="w-11/12 mx-auto py-6 mt-8">
+    <h3 class="text-3xl font-bold text-center">Your Favorite Food</h3>
+
+
+
+    <div class="w-11/12 mx-auto py-4">
+      <div id="card-container" class="grid grid-cols-2 gap-4">
+        
+      </div>
+
+    </div>
+
+
+
+
+   </main>
+
+   <footer class="footer bg-[#ffc10716] text-base-content p-10 mt-8">
+    <nav>
+      <h6 class="footer-title">Section</h6>
+      <a class="link link-hover">Home</a>
+      <a class="link link-hover">Features</a>
+      <a class="link link-hover">Pricing</a>
+      <a class="link link-hover">FAQs</a>
+      <a class="link link-hover">About</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Section</h6>
+      <a class="link link-hover">UIUX Design</a>
+      <a class="link link-hover">Product Design</a>
+      <a class="link link-hover">Privacy Policy</a>
+      <a class="link link-hover">Back End Developer</a>
+      <a class="link link-hover">Front End Developer</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Resources</h6>
+      <a class="link link-hover">FAQ</a>
+      <a class="link link-hover">Privacy policy</a>
+      <a class="link link-hover">Terms of services</a>
+      <a class="link link-hover">Support</a>
+    </nav>
+    <form>
+      <h6 class="footer-title">Subscribe to our Newsletter</h6>
+      <fieldset class="form-control w-80">
+        <p class="text-gray-500 py-3">There are many variations of passages of available, but the majority have suffered</p>
+        <div class="join">
+          <input
+            type="text"
+            placeholder="Email here"
+            class="input input-bordered join-item" />
+          <button class="btn btn-primary join-item">Subscribe</button>
+        </div>
+      </fieldset>
+    </form>
+  </footer>
+
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
